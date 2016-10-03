@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+
+<html ng-app = "myapp">
+
+<link rel="stylesheet" type = "text/css" href="CSS/styles.css">
+<script src = "JS/angular.min.js"></script>
+<script src = "JS/directives.js"></script>
+<script src = "JS/controllers.js"></script>
+
+	<body ng-controller="populateCalendar">
+		{{month}}<BR>
+		~~~~~~~~~~~~~~~~~~~~~
+		<div ng-repeat = "week in month">
+			<date-tile ng-repeat = "day in week.week"></date-tile>
+		</div>
+		
+	</body>
+
+
+</html>
