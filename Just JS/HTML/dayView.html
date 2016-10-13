@@ -1,0 +1,5 @@
+<div ng-style = "dayViewCSS" panhandler>
+	<div ng-repeat="event in events" ng-style ="eventTileCSS(event.duration)">
+		{{event.startTime}}
+	</div>
+</div>

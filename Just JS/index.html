@@ -2,18 +2,20 @@
 
 <html ng-app = "myapp">
 
-<link rel="stylesheet" type = "text/css" href="CSS/styles.css">
+
+
+<script src = "JS/cssobj.js"></script>
+<script src = "JS/calFunctions.js"></script>
 <script src = "JS/angular.min.js"></script>
 <script src = "JS/directives.js"></script>
 <script src = "JS/controllers.js"></script>
+<script src = "JS/angular-panhandler.min.js"></script>
 
 	<body ng-controller="populateCalendar">
-		{{month}}<BR>
-		~~~~~~~~~~~~~~~~~~~~~
-		<div ng-repeat = "week in month">
-			<date-tile ng-repeat = "day in week.week"></date-tile>
-		</div>
-		
+		{{currentDay}}
+		<BR>
+		<calendar-view></calendar-view>
+		<day-view></day-view>
 	</body>
 
 

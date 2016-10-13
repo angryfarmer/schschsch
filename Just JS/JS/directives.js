@@ -1,4 +1,4 @@
-var app = angular.module('myapp',[]);
+var app = angular.module('myapp',['panhandler']);
 
 app.directive('calendarBody', function(){
 	return {
@@ -7,9 +7,30 @@ app.directive('calendarBody', function(){
 	};
 });
 
+app.directive('calendarView', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'HTML/calendarView.html'
+	};
+});
+
 app.directive('dateTile', function(){
 	return {
 		restrict: 'E',
 		templateUrl: 'HTML/dateTile.html'
+	};
+});
+
+app.directive('dayView', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'HTML/dayView.html'
+	};
+});
+
+app.directive('navWheel', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'HTML/navWheel'
 	};
 });
