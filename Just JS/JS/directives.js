@@ -21,6 +21,13 @@ app.directive('dateTile', function(){
 	};
 });
 
+app.directive('calendarHeader', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'HTML/calendarHeader.html'
+	};
+});
+
 app.directive('dayView', function() {
 	return {
 		restrict: 'E',

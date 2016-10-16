@@ -6,17 +6,19 @@
 
 <script src = "JS/cssobj.js"></script>
 <script src = "JS/calFunctions.js"></script>
+<script src = "JS/UITest.js"></script>
 <script src = "JS/angular.min.js"></script>
 <script src = "JS/directives.js"></script>
 <script src = "JS/controllers.js"></script>
 <script src = "JS/angular-panhandler.min.js"></script>
 
 	<body ng-controller="populateCalendar">
-		{{currentDay}}
+		<calendar-header></calendar-header>
 		<BR>
 		<calendar-view></calendar-view>
 		<day-view></day-view>
 	</body>
+	<div></div>
 
 
 </html>
