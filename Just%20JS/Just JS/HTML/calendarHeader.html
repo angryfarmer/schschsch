@@ -1,0 +1,19 @@
+<div ng-style = "calendarHeaderCSS">
+	<div ng-style = "headerControlContainerCSS">
+		<div ng-style = "leftMonthArrowCSS" ng-click = "changeMonthLeft()	">
+			<<
+		</div>
+		<div ng-style = "monthButtonCSS">
+			{{headerDisplay}}
+		</div>
+		<div ng-style = "rightMonthArrowCSS" ng-click = "changeMonthRight()">
+		 	>>
+		</div>
+	</div>
+	<br>
+	<div ng-style = "dayHeaderContainerCSS">
+		<div ng-repeat = "day in dayHeaderValues" ng-style="dayHeaderCSS">
+			{{day.day}}
+		</div>
+	</div>
+</div>
